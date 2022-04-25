@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<customviews.typefacesviews.TypeFaceGoogleBold
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:text="Document header"
+    android:background="#dfdfdf"
+    android:gravity="center|left"
+    android:paddingLeft="10dp"
+    android:id="@+id/header"
+    android:textColor="#333333"
+    android:textStyle="bold">
+
+</customviews.typefacesviews.TypeFaceGoogleBold>

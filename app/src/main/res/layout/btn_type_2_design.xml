@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.apporio.demotaxiappdriver.views.MButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/icons_8_muted_red"
+    android:clickable="true"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:textAllCaps="true"
+    android:textColor="@color/pure_white"
+    android:textSize="18dp" />

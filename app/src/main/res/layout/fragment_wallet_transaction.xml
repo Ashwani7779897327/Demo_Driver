@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".wallet.WalletTransactionFragment">
+
+    <com.sam.placer.PlaceHolderView
+        android:id="@+id/place_holder_wallet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.sam.placer.PlaceHolderView>
+
+
+</FrameLayout>

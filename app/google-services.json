@@ -1,0 +1,211 @@
+{
+  "project_info": {
+    "project_number": "316763323278",
+    "firebase_url": "https://apporio-taxi.firebaseio.com",
+    "project_id": "apporio-taxi",
+    "storage_bucket": "apporio-taxi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316763323278:android:abeba77331630524",
+        "android_client_info": {
+          "package_name": "com.apporio.apporiotaxi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "316763323278-epqkso9b6dbgcjg7tmu2k7tolnpo2k6r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdPGfYiIa05jut_tjNA-Uj_nky3X-aLWw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "316763323278-epqkso9b6dbgcjg7tmu2k7tolnpo2k6r.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "316763323278-an3oama0fhmaqekbfkcs27d2jkkab8cq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.infolabs.ScootARide"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316763323278:android:4589187b0f63f08a",
+        "android_client_info": {
+          "package_name": "com.apporio.demotaxiapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "316763323278-tok4c6lpemdac2qhuaeaqhj5ldrggjqn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.apporio.demotaxiapp",
+            "certificate_hash": "4b5d0b0866472fb1a5596f7663a80bc609020fe0"
+          }
+        },
+        {
+          "client_id": "316763323278-rbr3kne51lj1sqr44edka0kni13gi84i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.apporio.demotaxiapp",
+            "certificate_hash": "0ca670b19d428736243e4e3e8c50192202c79698"
+          }
+        },
+        {
+          "client_id": "316763323278-7rg9bmuig7epl6h7bl6au9jehan1ipgd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.apporio.demotaxiapp",
+            "certificate_hash": "2ddc5bdbbdcb463e7340d947f7ef3039da4d97c8"
+          }
+        },
+        {
+          "client_id": "316763323278-epqkso9b6dbgcjg7tmu2k7tolnpo2k6r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdPGfYiIa05jut_tjNA-Uj_nky3X-aLWw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "316763323278-epqkso9b6dbgcjg7tmu2k7tolnpo2k6r.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "316763323278-an3oama0fhmaqekbfkcs27d2jkkab8cq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.infolabs.ScootARide"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316763323278:android:f36f1f27cbc5e6fe",
+        "android_client_info": {
+          "package_name": "com.apporio.demotaxiappdriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "316763323278-3c83rofbrddruiua4i0et8m82hbtpp7a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.apporio.demotaxiappdriver",
+            "certificate_hash": "6823ace3d257af25752ecce53304de826b636ddc"
+          }
+        },
+        {
+          "client_id": "316763323278-k04g4vpmq7j75qtnn485im6adpq6ab5k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.apporio.demotaxiappdriver",
+            "certificate_hash": "4b5d0b0866472fb1a5596f7663a80bc609020fe0"
+          }
+        },
+        {
+          "client_id": "316763323278-en8gmqej34nqufkakoou4fi53a4p2248.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.apporio.demotaxiappdriver",
+            "certificate_hash": "0ca670b19d428736243e4e3e8c50192202c79698"
+          }
+        },
+        {
+          "client_id": "316763323278-epqkso9b6dbgcjg7tmu2k7tolnpo2k6r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdPGfYiIa05jut_tjNA-Uj_nky3X-aLWw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "316763323278-epqkso9b6dbgcjg7tmu2k7tolnpo2k6r.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "316763323278-an3oama0fhmaqekbfkcs27d2jkkab8cq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.infolabs.ScootARide"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316763323278:android:0296ea6c37dab0d7",
+        "android_client_info": {
+          "package_name": "com.apporio.taxiadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "316763323278-2qqb5d8poqgkl77h0pd3cc5v5kr5nnr7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.apporio.taxiadmin",
+            "certificate_hash": "0ca670b19d428736243e4e3e8c50192202c79698"
+          }
+        },
+        {
+          "client_id": "316763323278-epqkso9b6dbgcjg7tmu2k7tolnpo2k6r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdPGfYiIa05jut_tjNA-Uj_nky3X-aLWw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "316763323278-epqkso9b6dbgcjg7tmu2k7tolnpo2k6r.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "316763323278-an3oama0fhmaqekbfkcs27d2jkkab8cq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.infolabs.ScootARide"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

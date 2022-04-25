@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#252525"
+        android:gravity="top|right"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/select_data">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:background="#161616"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:gravity="center">
+                <customviews.typefacesviews.TypeFaceGoogle
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/data_range"
+                    android:textSize="10dp"
+                    android:textColor="@color/icons_8_muted_yellow"/>
+                <customviews.typefacesviews.TypeFaceGoogle
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="___________"
+                    android:textSize="10dp"
+                    android:id="@+id/date_range_txt"
+                    android:textColor="@color/icons_8_muted_yellow"
+                    />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/chart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="-15dp"
+            android:layout_gravity="bottom">
+            <customviews.typefacesviews.TypeFaceGoogle
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="M"
+                android:gravity="center"
+                android:textColor="@color/pure_white"
+                android:maxLines="1"/>
+            <customviews.typefacesviews.TypeFaceGoogle
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="T"
+                android:gravity="center"
+                android:textColor="@color/pure_white"
+                android:maxLines="1"/>
+            <customviews.typefacesviews.TypeFaceGoogle
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="W"
+                android:gravity="center"
+                android:textColor="@color/pure_white"
+                android:maxLines="1"/>
+            <customviews.typefacesviews.TypeFaceGoogle
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="T"
+                android:gravity="center"
+                android:textColor="@color/pure_white"
+                android:maxLines="1"/>
+            <customviews.typefacesviews.TypeFaceGoogle
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="F"
+                android:gravity="center"
+                android:textColor="@color/pure_white"
+                android:maxLines="1"/>
+            <customviews.typefacesviews.TypeFaceGoogle
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SA"
+                android:gravity="center"
+                android:textColor="@color/icons_8_muted_yellow"
+                android:maxLines="1"/>
+            <customviews.typefacesviews.TypeFaceGoogle
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SU"
+                android:gravity="center"
+                android:textColor="@color/icons_8_muted_yellow"
+                android:maxLines="1"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1">
+                <customviews.typefacesviews.TypeFaceGoogle
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_trips"
+                    android:textColor="@color/pure_white"/>
+                <customviews.typefacesviews.TypeFaceGoogleBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:id="@+id/weekly_trips"
+                    android:textColor="@color/icons_8_muted_yellow"
+                    android:text="--------"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#161616"
+                        android:orientation="horizontal"
+                        android:id="@+id/weekly_earning_btn"
+                        android:gravity="center">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:gravity="center">
+                            <customviews.typefacesviews.TypeFaceGoogle
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/weekly_earnings"
+                                android:textColor="@color/pure_white"/>
+
+
+
+                            <customviews.typefacesviews.TypeFaceGoogleBold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/icons_8_muted_green_1"
+                                android:textStyle="bold"
+                                android:text="________"
+                                android:id="@+id/weekly_earning"
+                                android:textSize="18dp"/>
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="40dp"
+                            android:tint="@color/pure_white"
+                            android:src="@drawable/ic_right_sort"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swiperefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+
+        <com.sam.placer.PlaceHolderView
+            android:id="@+id/placeholder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.sam.placer.PlaceHolderView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    <customviews.typefacesviews.TypeFaceGoogle
+        android:id="@+id/no_record_found"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No Record found "
+        android:textSize="28dp"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:visibility="gone"/>
+
+
+
+</FrameLayout>

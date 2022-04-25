@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddEmergencyContactFieldActivity">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:src="@drawable/ic_left_sort_white"
+            android:padding="10dp"
+            android:tint="#000"
+            android:id="@+id/back"/>
+        <customviews.typefacesviews.TypeFaceGoogle
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="@string/add_contact"
+            android:gravity="center"
+            android:paddingRight="20dp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+
+
+    <EditText
+        android:id="@+id/enter_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_name"
+        android:layout_margin="20dp"
+        />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        >
+
+
+        <customviews.typefacesviews.TypeFaceGoogleBold
+            android:id="@+id/country_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_sort_down_vector"
+            android:layout_marginLeft="10dp"/>
+
+
+        <EditText
+            android:id="@+id/edt_enter_phone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center|left"
+            android:hint="@string/enter_phone_number"
+            android:inputType="phone"
+            android:minLines="1"
+            android:textColorHint="@color/icons_8_muted_grey"
+            android:textSize="15dp" />
+
+
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/submit"
+        android:id="@+id/submit_emergency_contact"
+        android:textColor="@color/pure_white"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/dot_red"
+        android:layout_gravity="center"/>
+    <customviews.typefacesviews.TypeFaceGoogleBold
+        android:id="@+id/txt_stops"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="Multiple Stops"
+        android:layout_margin="5dp"
+        android:textSize="16dp"
+        android:textColor="@color/pure_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

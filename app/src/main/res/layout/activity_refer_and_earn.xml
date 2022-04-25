@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center|top"
+    android:id="@+id/root"
+    tools:context=".ReferAndEarnActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:orientation="horizontal"
+            android:gravity="center|left">
+            <ImageView
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:src="@drawable/back_arrow"
+                android:padding="15dp"
+                android:id="@+id/back"
+                android:tint="@color/icons_8_muted_grey"/>
+
+            <customviews.typefacesviews.TypeFaceGoogleBold
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/refer_and_earn"
+                android:gravity="center"
+                android:paddingRight="49dp"/>
+        </LinearLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/swipe_refresh_layout"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/main_layout"
+                android:gravity="center|top"
+                android:visibility="visible"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@color/muted_black"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/refer_image" />
+
+                <customviews.typefacesviews.TypeFaceGoogleBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/refer_view_and_earn_more"
+                    android:textStyle="bold"
+                    android:id="@+id/refer_headline"
+                    android:textSize="18dp"/>
+                <customviews.typefacesviews.TypeFaceGoogle
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/refer_this_following_code_to_your_friends_and_family_and_earn_money_by_just_viewing_advertisement_and_refer_again"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/muted_black"
+                    android:id="@+id/refer_description"
+                    android:textSize="13dp"
+                    android:gravity="center"/>
+
+
+                <LinearLayout
+                    android:id="@+id/llReferData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center">
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="1">
+                        <customviews.typefacesviews.TypeFaceGoogleBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/start_date"
+                            android:textSize="12dp"
+                            android:textStyle="bold"/>
+
+
+                        <customviews.typefacesviews.TypeFaceGoogle
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="________"
+                            android:id="@+id/start_date"/>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="1">
+                        <customviews.typefacesviews.TypeFaceGoogleBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/end_date"
+                            android:textSize="12dp"
+                            android:textStyle="bold"/>
+
+
+                        <customviews.typefacesviews.TypeFaceGoogle
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="______"
+                            android:id="@+id/end_dte"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <customviews.typefacesviews.TypeFaceGoogleBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="______"
+                    android:textSize="25dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:background="@drawable/dotted_square"
+                    android:padding="15dp"
+                    android:id="@+id/refer_code"
+                    android:layout_marginTop="15dp"/>
+
+                    <Button
+                        android:id="@+id/share_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="@string/share_your_code"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/pure_white"
+                        android:background="@color/colorPrimary"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"/>
+
+            </LinearLayout>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:geekui="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.apporio.demotaxiappdriver.DocumentActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginRight="-2dp">
+        <RelativeLayout
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:gravity="center"
+            android:id="@+id/back">
+            <ImageView
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_left_sort_white"
+                android:tint="@color/icons_8_muted_greydark"/>
+        </RelativeLayout>
+
+        <customviews.typefacesviews.TypeFaceGoogleBold
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:gravity="center"
+            android:text="@string/documents"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginRight="-2dp"
+        android:layout_marginBottom="10dp">
+
+        <com.sam.placer.PlaceHolderView
+            android:id="@+id/placeholder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.sam.placer.PlaceHolderView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="-2dp"
+        android:layout_marginLeft="-2dp">
+        <customviews.typefacesviews.TypeFaceGoogleBold
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:id="@+id/submit"
+            android:background="@color/icon_8_muted_black"
+            android:textColor="@color/icons_8_muted_yellow"
+            android:text="@string/ok"
+            android:gravity="center"/>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

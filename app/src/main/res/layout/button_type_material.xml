@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.apporio.demotaxiappdriver.views.MaterialRippleLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/confirm_lout_btn"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_gravity="center_horizontal"
+    app:met_isMButton_type1="true"
+    app:mrl_rippleAlpha="0.4"
+    app:mrl_rippleColor="@color/colorPrimaryDark"
+    app:mrl_rippleDelayClick="true"
+    app:mrl_rippleHover="true"
+    app:mrl_rippleOverlay="true">
+
+</com.apporio.demotaxiappdriver.views.MaterialRippleLayout>

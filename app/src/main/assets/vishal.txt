@@ -1,0 +1,50 @@
+Over the last 10 years, we’ve worked together to build an incredible ecosystem with more than 2.5 billion active users in over 190 countries. This would not be possible without you and all the fantastic apps and games you’ve built that entertain, help, and educate people around the world.
+
+Every month, you upload more than 750,000 APKs and app bundles to the Play Console. We’ve been amazed by your enthusiasm, and it’s been our privilege to help you grow your business. This year, we want to help you go even further. So today at Google I/O, we're announcing new tools and features to help you develop, release, and grow your apps and games — many of them based on your feedback and suggestions.
+
+Efficient, modular apps and customizable feature delivery
+Last year we introduced Android's new publishing format, the Android App Bundle, and an entirely new dynamic delivery framework on Google Play. There are now over 80,000 apps and games using app bundles in production, with an average size savings of 20%. As a result of those savings, apps have seen up to 11% install uplift. As the future of app delivery, we’re excited to share these latest enhancements to the Android App Bundle.
+
+Dynamic features are out of beta and available to all developers, including these new delivery options:
+
+On-demand delivery — install features when they’re needed or in the background, instead of delivering them at install time, and reduce the size of your app.
+Conditional delivery — control which parts of your app to deliver at the time of install based on the user’s country, device features, or minimum SDK version.
+Instant experiences — now fully supported, so you only need to upload one artifact for your installed app and Google Play Instant experiences.
+During our beta program, many developers implemented interesting use cases with dynamic features. Netflix, for example, now delivers their customer support functionality as a dynamic feature to users who visit the support center. By making functionality available only to users who need it, Netflix reported a 33% reduction in app size. You can learn more in the video below.
+
+
+Seamless internal testing and increased security
+We heard you loud and clear: testing bundles is hard. But with the new internal app sharing, you can now share test builds in a matter of seconds. Just upload your app bundle to Google Play and get a download URL to share with your testers. You don’t need to worry about version codes, signing keys, or most other validations that your production releases need to conform to.
+
+In addition to efficiency and modularity, the Android App Bundle also now offers increased security with the launch of app signing key upgrade for new installs. With this feature, you can upgrade the cryptographic strength of your signing key for new installs and their updates on Google Play. Many developers sign their apps with keys generated a long time ago, and this new feature is the only backwards-compatible way to increase their strength.
+
+Easier for users to update
+Although auto-updates reach many users, you told us it was still challenging to get some users to update your apps. Now that our new in-app updates API is in general availability, users will be able to update without ever leaving your app. During our early access program, many developers used our API to create a polished upgrade flow, resulting in a median acceptance rate of about 50%.
+
+The API currently supports two flows:
+
+The “immediate” flow is a full-screen user experience that guides the user from download to update before they can use your app.
+The “flexible flow” allows users to download the update while continuing to use your app.
+Two iPhones side by side. The first on displaying Flexible update flow with a pop up recommending an update. The second displaying Immediate update flow with a pop up recommending an update.
+Stronger decision-making with new Google Play Console data
+The right data can help you improve your app performance and grow your business. That’s why we’re excited to tell you about new metrics and insights that will help you better measure your app health and analyze your performance.
+
+Core metrics refresh — better understand your acquisition and churn, including data on returning users, automatic change analysis, install method (such as pre-installs and peer-to-peer sharing), metric benchmarking, and the ability to aggregate and dedupe over periods from hours to quarters.
+App size metrics and reports — gain insights about your app size in Android vitals, including download size, size on device (at install time), changes compared to peers over time, and tailored optimization recommendations.
+Developer-selected peer benchmarks — create a custom set of 8-12 peers to compare your app to, then see the median value of the set and the difference between your app and its peers for Android vitals data as well as for public metrics like your rating.
+Market insights with curated peersets — in the coming months, you’ll also be able to compare your growth against an automatically generated, curated peerset of around 100 apps similar to yours for business-sensitive metrics like conversion rate and uninstall rate.
+Android Vitals Overview dashboard on Peer group screen
+Making it easier to respond to and improve user reviews
+We’re also making big changes to another key source of performance data: your user reviews. Many of you told us that you want a rating that reflects a more current version of your app, not what it was years ago — and we agree. So instead of a lifetime cumulative value, your Google Play Store rating will be recalculated to give more weight to your most recent ratings. Users won’t see the updated rating in the Google Play Store until August, but you can preview your new rating in the Google Play Console today.
+
+Every day, developers respond to more than 100,000 reviews in the Play Console, and when they do, we’ve seen that users update their rating by +0.7 stars on average. So in addition to the ratings change, we're making it easier to respond to reviews with suggested replies. When you go to respond to a user, you’ll see three suggested replies which have been created automatically based on the content of the review. You can choose to send one as-suggested, customize a suggestion for more personalization, or create your own message from scratch. Suggested replies are available in English now with additional languages coming later.
+
+Google user review with suggested replies in Beta.
+Better Google Play Store listing targeting and customization
+Your store listing is where users come to learn more about your app or game and decide whether to install. It’s important real estate, so we’re releasing new features that let you optimize your Google Play Store to address different moments in the user lifecycle.
+
+Following the launch of custom listings by country at GDC, we’re announcing a new early access program that lets you create custom listings by install state. Increase acquisition, retention, and re-engagement by providing customized marketing messages for users who haven’t installed your app, users who have your app, and users who have uninstalled your app. If you’re interested in joining the program, sign up here.
+Now that pre-registration is available to all developers, we’re launching two new features to help you make the most of it: custom listing pages for pre-registration and pre-registration rewards, which let you incentivize players for signing up for notifications before you launch.
+Learn more about these and other Google Play features at Google I/O. Join us live or watch later on the Android Developers YouTube channel.
+
+You can also take your skills and knowledge to the next level with our e-learning courses on Google Play’s Academy for App Success, and sign up for our newsletter to stay up to date with our latest features and updates.

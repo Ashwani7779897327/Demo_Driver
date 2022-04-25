@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    app:cardBackgroundColor="@color/icon_8_muted_black"
+    tools:context="com.apporio.demotaxiappdriver.PhotoUploaderActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:background="@color/icon_8_muted_black"
+        android:orientation="vertical">
+
+        <customviews.typefacesviews.TypeFaceGoogle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/photo_upload"
+            android:textColor="@color/pure_white" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_camera" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <customviews.typefacesviews.TypeFaceGoogleBold
+                    android:id="@+id/camera"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="#484848"
+                    android:gravity="center"
+                    android:text="@string/camera"
+                    android:textColor="@color/pure_white"
+                    android:textSize="15dp"></customviews.typefacesviews.TypeFaceGoogleBold>
+
+                <customviews.typefacesviews.TypeFaceGoogleBold
+                    android:id="@+id/gallery"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="#bbbbbb"
+                    android:gravity="center"
+                    android:text="@string/gallery"
+                    android:textColor="@color/pure_white"
+                    android:textSize="15dp"></customviews.typefacesviews.TypeFaceGoogleBold>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:id="@+id/llExpiryLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <customviews.typefacesviews.TypeFaceGoogle
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/enter_expiry_date_of_your_document"
+                android:textColor="@color/pure_white" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
+                <customviews.typefacesviews.TypeFaceGoogle
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/pure_white"
+                    android:padding="7dp"
+                    android:text="DD MM YYYY" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <customviews.typefacesviews.TypeFaceGoogleBold
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/pure_white"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/submit"
+            android:textColor="@color/icon_8_muted_black" />
+    </androidx.cardview.widget.CardView>
+</androidx.cardview.widget.CardView>

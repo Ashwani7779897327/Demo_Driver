@@ -1,0 +1,8 @@
+
+(1) Normal booking should send notification to group of driver (remove all null or empty player id )
+(2) On pulsating view 104 status notification should send to every driver who's allocated ride previously .
+(3) if ride accpeted by driver and in any case user clicks cancel then it should navigate to trackride screen
+(3) admin dispatch (normal) should work
+(4) driver cancel , accept , reached , begin trip , end trip , admin cancel , change destination should be managed in two separate way (when track ride screen is open and when it is closed it should show notification )
+(5) admin cancel should work work driver as well , if driver exits the app and admin cancel the ride then a notification should create and session should gets clear
+(6) manual taxi dispatch should get notification in user app (on click of driver alloted notification should open trip history , on accepted notification click should open track ride screen )

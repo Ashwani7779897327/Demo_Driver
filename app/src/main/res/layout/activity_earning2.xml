@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#333333"
+    android:id="@+id/root"
+    tools:context=".EarningActivity">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="49dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#3d3d3d">
+            <ImageView
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:src="@drawable/ic_left_sort_white"
+                android:id="@+id/back"
+                android:padding="15dp"/>
+            <customviews.typefacesviews.TypeFaceGoogleBold
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/EARNINF_ACTIVITY__your_earning"
+                android:paddingRight="49dp"
+                android:textColor="@color/pure_white"
+                android:gravity="center"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/swiperefreshLayout">
+        <com.sam.placer.PlaceHolderView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/placeholder"></com.sam.placer.PlaceHolderView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
+
+</LinearLayout>

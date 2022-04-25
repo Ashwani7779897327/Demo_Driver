@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: morxander.zaman:Zaman:1.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7dca17a8094413f7290ebf87443b36a9/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7dca17a8094413f7290ebf87443b36a9/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7dca17a8094413f7290ebf87443b36a9/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

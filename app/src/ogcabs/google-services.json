@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "749088101851",
+    "firebase_url": "https://ogcabs-193806.firebaseio.com",
+    "project_id": "ogcabs-193806",
+    "storage_bucket": "ogcabs-193806.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:749088101851:android:cc63ba47b55fb409",
+        "android_client_info": {
+          "package_name": "com.ogcabs.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "749088101851-rl34v1hf3h712vq1i2k4lcibvitlsktd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBm9muLxsEUrmVCIwu3-mea1hhFKdpcYW0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "749088101851-rl34v1hf3h712vq1i2k4lcibvitlsktd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:749088101851:android:4bb6db3d74e7d8ed",
+        "android_client_info": {
+          "package_name": "com.ogcabs.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "749088101851-rl34v1hf3h712vq1i2k4lcibvitlsktd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBm9muLxsEUrmVCIwu3-mea1hhFKdpcYW0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "749088101851-rl34v1hf3h712vq1i2k4lcibvitlsktd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:id="@+id/contact_view">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <customviews.typefacesviews.TypeFaceGoogleBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="------"
+            android:id="@+id/contact_name"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:textSize="22dp"/>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingTop="2dp">
+
+
+            <customviews.typefacesviews.TypeFaceGoogle
+                android:id="@+id/phone_contact"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="----------"
+                android:textSize="20dp"/>
+
+            <customviews.typefacesviews.TypeFaceGoogle
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:textSize="23dp"
+                android:id="@+id/delete_contact"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_delete_vector"
+                android:backgroundTint="@color/pure_black"
+                android:textColor="#e90000"/>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#6e000000">
+
+
+        </View>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

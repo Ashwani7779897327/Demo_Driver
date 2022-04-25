@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:id="@+id/root"
+    android:padding="10dp">
+    <customviews.typefacesviews.TypeFaceGoogle
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="CNR 3233 "
+        android:textSize="15dp"
+        android:id="@+id/ride_text"
+        android:layout_weight="1"
+        android:textColor="#bbbbbb"/>
+
+    <customviews.typefacesviews.TypeFaceGoogle
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/status_text"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/icons_8_muted_yellow"/>
+
+    <customviews.typefacesviews.TypeFaceGoogleBold
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/icons_8_muted_green_1"
+        android:text="$332.89"
+        android:id="@+id/value_text"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_right"
+        android:padding="5dp"
+        android:tint="@color/icons_8_muted_grey"/>
+</LinearLayout>

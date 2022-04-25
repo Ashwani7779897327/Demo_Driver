@@ -1,0 +1,482 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:geekui="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#efefef"
+    android:id="@+id/root"
+    tools:context=".ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:src="@drawable/ic_left_sort_white"
+            android:padding="10dp"
+            android:id="@+id/back"/>
+        <customviews.typefacesviews.TypeFaceGoogle
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="@string/manage_your_profile"
+            android:gravity="center"
+            android:paddingRight="20dp"
+            android:textColor="@color/pure_white"/>
+
+        <ImageView
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="40dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/colorPrimary"></RelativeLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/driver_image"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center|top"
+                    android:elevation="5dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp">
+
+                    <customviews.typefacesviews.TypeFaceGoogleBold
+                        android:id="@+id/edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|right"
+                        android:padding="15dp"
+                        android:text="@string/edit"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|top"
+                        android:orientation="vertical"
+                        android:paddingTop="45dp">
+
+                        <customviews.typefacesviews.TypeFaceGoogleBold
+                            android:id="@+id/driver_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textStyle="bold" />
+
+                        <customviews.typefacesviews.TypeFaceGoogle
+                            android:id="@+id/driver_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+
+                        <customviews.typefacesviews.TypeFaceGoogle
+                            android:id="@+id/driver_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            geekui:cardCornerRadius="15dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="37dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/icons_8_muted_orange"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <customviews.typefacesviews.TypeFaceGoogle
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/total_rides"
+                                        android:textColor="@color/pure_white"
+                                        android:textSize="10dp" />
+
+                                    <customviews.typefacesviews.TypeFaceGoogleBold
+                                        android:id="@+id/total_rides"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="..."
+                                        android:textColor="@color/pure_white"
+                                        android:textSize="10dp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/icons_8_muted_yellow"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <customviews.typefacesviews.TypeFaceGoogle
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/your_rating"
+                                        android:textColor="@color/pure_white"
+                                        android:textSize="10dp" />
+
+                                    <customviews.typefacesviews.TypeFaceGoogle
+                                        android:id="@+id/total_rating"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="..."
+                                        android:textColor="@color/pure_white"
+                                        android:textSize="10dp" />
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@color/icons_8_muted_violet"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <customviews.typefacesviews.TypeFaceGoogle
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/total_earnings"
+                                        android:textColor="@color/pure_white"
+                                        android:textSize="10dp" />
+
+                                    <customviews.typefacesviews.TypeFaceGoogle
+                                        android:id="@+id/total_earning"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="..."
+                                        android:textColor="@color/pure_white"
+                                        android:textSize="10dp" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </FrameLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/change_bank_details"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:padding="10dp"
+                            geekui:srcCompat="@drawable/ic_bank_account_vector"/>
+
+                        <customviews.typefacesviews.TypeFaceGoogle
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:text="@string/manage_bank_details"
+                            android:gravity="center|left"
+                            android:paddingLeft="10dp"/>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_right_sort"
+                            android:padding="10dp"
+                            android:tint="@color/icons_8_muted_grey"/>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/change_home_address"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:padding="10dp"
+                            geekui:srcCompat="@drawable/ic_home_address_vector"/>
+
+
+                        <customviews.typefacesviews.TypeFaceGoogle
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/manage_home_address"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:gravity="center|left"/>
+
+
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_right_sort"
+                            android:padding="10dp"
+                            android:tint="@color/icons_8_muted_grey"/>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:id="@+id/manage_personal_doc">
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:padding="10dp"
+                            geekui:srcCompat="@drawable/ic_personal_documents_vector"/>
+
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_weight="1"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp">
+                            <customviews.typefacesviews.TypeFaceGoogle
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1"
+                                android:text="@string/manage_personal_document"
+                                android:gravity="center|left"/>
+                            <customviews.typefacesviews.TypeFaceGoogle
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="9dp"
+                                android:visibility="gone"
+                                android:id="@+id/some_doc_expire_text"
+                                android:textColor="@color/icons_8_muted_red"
+                                android:text="@string/some_document_expired"/>
+                        </LinearLayout>
+
+
+
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_right_sort"
+                            android:padding="10dp"
+                            android:tint="@color/icons_8_muted_grey"/>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llSubscription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_subscription"
+                            android:tint="@color/icons_8_muted_greydark"/>
+
+
+                        <customviews.typefacesviews.TypeFaceGoogle
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/heading_subscription_2"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:gravity="center|left"/>
+
+
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_right_sort"
+                            android:padding="10dp"
+                            android:tint="@color/icons_8_muted_grey"/>
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/emergency_contacts"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_add_alert_black_24dp"/>
+
+                        <customviews.typefacesviews.TypeFaceGoogle
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:text="@string/emergency_contacts"
+                            android:gravity="center|left"
+                            android:paddingLeft="10dp"/>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_right_sort"
+                            android:padding="10dp"
+                            android:tint="@color/icons_8_muted_grey"/>
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/change_password"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_lock_password_vector"/>
+
+                        <customviews.typefacesviews.TypeFaceGoogle
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:text="@string/change_password"
+                            android:gravity="center|left"
+                            android:paddingLeft="10dp"/>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_right_sort"
+                            android:padding="10dp"
+                            android:tint="@color/icons_8_muted_grey"/>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:id="@+id/logout">
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_logout_vector"/>
+
+                        <customviews.typefacesviews.TypeFaceGoogle
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:text="@string/PROFILE_ACTIVITY__logout"
+                            android:gravity="center|left"
+                            android:paddingLeft="10dp"/>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_right_sort"
+                            android:padding="10dp"
+                            android:tint="@color/icons_8_muted_grey"/>
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <customviews.typefacesviews.TypeFaceGoogleBold
+                android:id="@+id/headDateTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="-----"
+                android:textColor="@color/icons_8_muted_greydark"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <customviews.typefacesviews.TypeFaceGoogle
+                        android:id="@+id/totalEarningTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:gravity="center"
+                        android:textColor="@color/icons_8_muted_green_1"
+                        android:textSize="17dp" />
+
+                    <customviews.typefacesviews.TypeFaceGoogle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/DAILY_STATE_MENT_ACTIVITY__total_earning"
+                        android:textColor="@color/icons_8_muted_green_1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <customviews.typefacesviews.TypeFaceGoogle
+                        android:id="@+id/totalRidesTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:gravity="center"
+                        android:textSize="17dp" />
+
+                    <customviews.typefacesviews.TypeFaceGoogle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/DAILY_STATE_MENT_ACTIVITY__total_earningcompleted_trips"
+                        android:textColor="@color/icon_8_muted_black" />
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <customviews.typefacesviews.TypeFaceGoogle
+                        android:id="@+id/acceptance_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:gravity="center"
+                        android:textSize="17dp"/>
+                    <customviews.typefacesviews.TypeFaceGoogle
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/WEEKLY_STATEMENT_ACTIVITY__acceptance_rate"
+                        android:textColor="@color/icon_8_muted_black"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:gravity="center|left">
+
+
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center|left"
+                    android:padding="10dp"
+                    android:background="#414141">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:gravity="center">
+                        <customviews.typefacesviews.TypeFaceGoogleBold
+                            android:id="@+id/online_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/icons_8_muted_green_2_dark"
+                            android:text=""
+                            android:textSize="23dp"/>
+
+                        <customviews.typefacesviews.TypeFaceGoogle
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/online_time"
+                            android:textSize="18dp"
+                            android:textColor="@color/icons_8_muted_green_2_dark"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:gravity="center">
+                        <customviews.typefacesviews.TypeFaceGoogleBold
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="23dp"
+                            android:gravity="center"
+                            android:drawableLeft="@drawable/ic_star"
+                            android:textColor="@color/icons_8_muted_yellow"
+                            android:id="@+id/overall_rating"/>
+
+                        <customviews.typefacesviews.TypeFaceGoogle
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/icons_8_muted_yellow"
+                            android:textSize="18dp"
+                            android:text="@string/overall_rating"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:background="#2b2b2b">
+
+            <customviews.typefacesviews.TypeFaceGoogleBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/WEEKLY_STATEMENT_ACTIVITY__trips_earnings"
+                android:textColor="@color/icons_8_muted_grey"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingRight="20dp">
+
+                <customviews.typefacesviews.TypeFaceGoogle
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/pure_white"
+                    android:text="@string/WEEKLY_STATEMENT_ACTIVITY__fare_earned" />
+
+                <customviews.typefacesviews.TypeFaceGoogle
+                    android:id="@+id/consumer_billed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/pure_white"
+                    android:text="212" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingRight="20dp">
+
+                <customviews.typefacesviews.TypeFaceGoogle
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/pure_white"
+                    android:text="@string/WEEKLY_STATEMENT_ACTIVITY__taxi_fee" />
+
+                <customviews.typefacesviews.TypeFaceGoogle
+                    android:id="@+id/commision_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/pure_white"
+                    android:text="34" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingRight="20dp">
+
+                <customviews.typefacesviews.TypeFaceGoogle
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/WEEKLY_STATEMENT_ACTIVITY__total_amount"
+                    android:textColor="@color/pure_white"
+                    android:textSize="17dp" />
+
+                <customviews.typefacesviews.TypeFaceGoogle
+                    android:id="@+id/net_earning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/pure_white"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

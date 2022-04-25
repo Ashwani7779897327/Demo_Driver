@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ogcabsDriver.iml" filepath="$PROJECT_DIR$/.idea/modules/ogcabsDriver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ogcabsDriver.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ogcabsDriver.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/atslocation 2/ogcabsDriver.atslocation_2.iml" filepath="$PROJECT_DIR$/.idea/modules/atslocation 2/ogcabsDriver.atslocation_2.iml" />
+    </modules>
+  </component>
+</project>

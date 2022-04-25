@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_element"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/pure_white"
+    android:orientation="horizontal"
+    android:weightSum="2.2"
+    android:padding="10dp">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:gravity="center|left"
+        android:orientation="horizontal">
+
+
+        <customviews.typefacesviews.TypeFaceGoogle
+            android:id="@+id/document_name_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="@string/driving_licence"
+            android:textColor="@color/icon_8_muted_black" />
+
+
+    </LinearLayout>
+
+    <customviews.typefacesviews.TypeFaceGoogle
+        android:id="@+id/mand_doc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_weight=".2"
+        android:layout_marginRight="10dp"
+        android:text="*"
+        android:textColor="@color/red_text"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center|right"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <customviews.typefacesviews.TypeFaceGoogle
+            android:id="@+id/document_status_txt"
+            android:layout_width="100dp"
+
+            android:layout_height="wrap_content"
+            android:text="@string/not_sumitted"
+            android:textColor="@color/icons_8_muted_grey" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_right"
+            android:tint="@color/icons_8_muted_grey" />
+
+    </LinearLayout>
+
+</LinearLayout>

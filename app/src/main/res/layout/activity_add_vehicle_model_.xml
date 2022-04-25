@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:id="@+id/root"
+    tools:context=".AddVehicleActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="11">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="-2dp"
+            android:layout_marginRight="-2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_height="wrap_content"
+                    android:background="#dfdfdf"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <customviews.typefacesviews.TypeFaceGoogleBold
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+                        android:text="@string/create_vehicle"
+                        android:textColor="#333333"
+                        android:layout_weight="1"
+                        android:textStyle="bold">
+
+                    </customviews.typefacesviews.TypeFaceGoogleBold>
+
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="10dp"
+                        android:src="@drawable/info"
+                        android:id="@+id/create_vehicle_info"
+                        android:tint="@color/colorPrimary"/>
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border_round_corner_grey">
+                    <customviews.typefacesviews.TypeFaceGoogle
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/REGISTER_ACTIVITY__select_car_type"
+                        android:textSize="10dp" />
+
+                    <customviews.typefacesviews.TypeFaceGoogle
+                        android:id="@+id/car_type_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/click_to_select"
+                        android:textColorHint="@color/icons_8_muted_blue"
+                        android:maxLines="1"
+                        android:drawableRight="@drawable/ic_sort_down_vector"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/llFieldVehicleMake"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:layout_marginTop="10dp"
+                        android:textColorHint="@color/icons_8_muted_grey"
+                        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                        <EditText
+                            android:id="@+id/edtVehicleMake"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:background="#ffffff"
+                            android:hint="@string/enter_vehicle_make"
+                            android:paddingLeft="20dp"
+                            android:textColorHint="@color/icons_8_muted_grey"
+                            android:textSize="13dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@color/colorView" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/llSelectVehicleMake"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border_round_corner_grey">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/select_car_make"
+                        android:textSize="10dp" />
+
+
+                    <customviews.typefacesviews.TypeFaceGoogle
+                        android:id="@+id/edt_car_make"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_sort_down_vector"
+                        android:hint="@string/click_to_select"
+                        android:textColorHint="@color/icons_8_muted_blue"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/llFieldVehicleModel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:layout_marginTop="10dp"
+                        android:textColorHint="@color/icons_8_muted_grey"
+                        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                        <EditText
+                            android:id="@+id/edtVehicleModel"
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:background="#ffffff"
+                            android:hint="@string/enter_vehicle_model"
+                            android:paddingLeft="20dp"
+                            android:textColorHint="@color/icons_8_muted_grey"
+                            android:textSize="13dp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@color/colorView" />
+
+                    <LinearLayout
+                        android:id="@+id/llNoOfSeats"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="49dp"
+                            android:layout_marginTop="10dp"
+                            android:textColorHint="@color/icons_8_muted_grey"
+                            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                            <EditText
+                                android:id="@+id/edtNoOfSeats"
+                                android:layout_width="match_parent"
+                                android:layout_height="fill_parent"
+                                android:background="#ffffff"
+                                android:paddingRight="20dp"
+                                android:hint="@string/enter_no_of_seats"
+                                android:paddingLeft="20dp"
+                                android:inputType="number"
+                                android:textColorHint="@color/icons_8_muted_grey"
+                                android:textSize="13dp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@color/colorView" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/llSelectVehicleModel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border_round_corner_grey">
+
+                    <customviews.typefacesviews.TypeFaceGoogle
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/REGISTER_ACTIVITY__select_car_model"
+                        android:textSize="10dp"/>
+
+
+                    <customviews.typefacesviews.TypeFaceGoogle
+                        android:id="@+id/tv_car_model"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_sort_down_vector"
+                        android:hint="@string/click_to_select"
+                        android:textColorHint="@color/icons_8_muted_blue"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+
+                <!--<android.support.design.widget.TextInputLayout-->
+                    <!--app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="49dp"-->
+                    <!--android:textColorHint="@color/icons_8_muted_grey"-->
+                    <!--android:layout_marginTop="10dp">-->
+                    <!--<EditText-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:background="#ffffff"-->
+                        <!--android:hint="@string/enter_car_number"-->
+                        <!--android:textColorHint="@color/icons_8_muted_grey"-->
+                        <!--android:paddingLeft="20dp"-->
+                        <!--android:textSize="13dp" />-->
+                <!--</android.support.design.widget.TextInputLayout>-->
+
+
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0.5dp"-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:layout_marginRight="20dp"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:background="@color/colorView" />-->
+
+
+                <!--<android.support.design.widget.TextInputLayout-->
+                    <!--app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="49dp"-->
+                    <!--android:textColorHint="@color/icons_8_muted_grey"-->
+                    <!--android:layout_marginTop="10dp">-->
+                    <!--<EditText-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="fill_parent"-->
+                        <!--android:background="#ffffff"-->
+                        <!--android:hint="@string/enter_car_number"-->
+                        <!--android:textColorHint="@color/icons_8_muted_grey"-->
+                        <!--android:paddingLeft="20dp"-->
+                        <!--android:textSize="13dp" />-->
+                <!--</android.support.design.widget.TextInputLayout>-->
+
+
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0.5dp"-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:layout_marginRight="20dp"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:background="@color/colorView" />-->
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border_round_corner_grey">
+
+                    <customviews.typefacesviews.TypeFaceGoogle
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/REGISTER_ACTIVITY__select_ride_category"
+                        android:textSize="10dp"/>
+
+                    <customviews.typefacesviews.TypeFaceGoogle
+                        android:id="@+id/tv_ride_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/click_to_select"
+                        android:drawableRight="@drawable/ic_sort_down_vector"
+                        android:textColorHint="@color/icons_8_muted_blue"
+                        android:textSize="15dp"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_vehicle_ac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:visibility="visible"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border_round_corner_grey">
+
+                    <customviews.typefacesviews.TypeFaceGoogle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/blue_filled_corner"
+                        android:padding="4dp"
+                        android:text="@string/feature_12"
+                        android:textSize="10dp" />
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/a_c_11"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/ac_non_ac_checkbox"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_babyseat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:visibility="visible"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border_round_corner_grey">
+
+                    <customviews.typefacesviews.TypeFaceGoogle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/baby_seat_availability_15"
+                        android:padding="4dp"
+                        android:background="@drawable/blue_filled_corner"
+                        android:textSize="10dp"/>
+
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/babyseat_13"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/cb_babyseat"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_wheel_chair"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:visibility="visible"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border_round_corner_grey">
+
+                    <customviews.typefacesviews.TypeFaceGoogle
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wheel_chair_16"
+                        android:padding="4dp"
+                        android:background="@drawable/blue_filled_corner"
+                        android:textSize="10dp"/>
+
+
+                    <CheckBox
+                        android:id="@+id/cb_wheel_chair"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wheel_chair_facility_14"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="10dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_height="wrap_content"
+                    android:background="#dfdfdf"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <customviews.typefacesviews.TypeFaceGoogleBold
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center|left"
+                        android:paddingLeft="10dp"
+                        android:text="@string/add_vehicle_details"
+                        android:textColor="#333333"
+                        android:layout_weight="1"
+                        android:textStyle="bold">
+
+                    </customviews.typefacesviews.TypeFaceGoogleBold>
+
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:tint="@color/icons_8_muted_blue"/>
+                </LinearLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout   app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:textColorHint="@color/icons_8_muted_grey"
+                    android:layout_marginTop="10dp">
+                    <EditText
+                        android:id="@+id/car_number_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:background="#ffffff"
+                        android:hint="@string/enter_car_number"
+                        android:textColorHint="@color/icons_8_muted_grey"
+                        android:paddingLeft="20dp"
+                        android:textSize="13dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorView" />
+
+
+
+                <com.google.android.material.textfield.TextInputLayout   app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:textColorHint="@color/icons_8_muted_grey"
+                    android:layout_marginTop="10dp">
+                    <EditText
+                        android:id="@+id/car_color_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#ffffff"
+                        android:textColorHint="@color/icons_8_muted_grey"
+                        android:hint="@string/enter_car_color"
+                        android:paddingLeft="20dp"
+                        android:textSize="13dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorView" />
+
+                <LinearLayout
+                    android:id="@+id/number_placet_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <customviews.typefacesviews.TypeFaceGoogle
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:paddingLeft="15dp"
+                        android:text="@string/select_number_plate_image" />
+
+                    <ImageView
+                        android:id="@+id/number_plate_image"
+                        android:layout_width="120dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="10dp"
+                        android:scaleType="centerCrop"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorView" />
+
+                <LinearLayout
+                    android:id="@+id/select_car_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <customviews.typefacesviews.TypeFaceGoogle
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:paddingLeft="15dp"
+                        android:text="@string/select_car_photo" />
+
+                    <ImageView
+                        android:id="@+id/vehicle_image"
+                        android:layout_width="120dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="10dp"
+                        android:scaleType="centerCrop"/>
+                </LinearLayout>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/i_m_not_vehicle_owner"
+                    android:id="@+id/owner_chkbx"
+                    android:textColor="#333333"
+                    android:paddingVertical="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_gravity="left|center"
+                    android:background="#dfdfdf"
+                    android:textStyle="bold"
+                    android:visibility="gone"/>
+
+                <include layout="@layout/vehicle_owner_layout"
+                    android:visibility="gone"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@color/white"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+
+    <customviews.typefacesviews.TypeFaceGoogleBold
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:text="@string/add_vehicle"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/pure_white"
+        android:id="@+id/submit_vehicle_button"/>
+</LinearLayout>

@@ -1,0 +1,510 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tracking_theme"
+    android:keepScreenOn="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/top_layout_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginBottom="-2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/back"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_left_sort_white"
+                        android:tint="@color/icons_8_muted_grey" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/image"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="#dfdfdf" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center|left"
+                            android:orientation="vertical">
+
+                            <customviews.typefacesviews.TypeFaceGoogleBold
+                                android:id="@+id/customer_name_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:text=""
+                                android:textColor="@color/colorBlack"
+                                android:textSize="11dp"
+                                android:textStyle="bold" />
+
+                            <customviews.typefacesviews.TypeFaceGoogle
+                                android:id="@+id/customer_phone_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:paddingLeft="10dp"
+                                android:text="" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <RatingBar
+                                android:id="@+id/rating"
+                                style="?android:attr/ratingBarStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <customviews.typefacesviews.TypeFaceGoogle
+                                android:id="@+id/rating_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/action_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:gravity="center|right"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|left"
+                            android:orientation="vertical">
+
+                            <customviews.typefacesviews.TypeFaceGoogle
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/payment"
+                                android:textColor="@color/colorBlack" />
+
+                            <customviews.typefacesviews.TypeFaceGoogleBold
+                                android:id="@+id/payment_method_name_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/icons_8_muted_green_1"
+                                android:textSize="12dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:id="@+id/call_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/call_btn_track"
+                            android:layout_width="37dp"
+                            android:layout_height="37dp"
+                            android:layout_gravity="center|top"
+                            android:layout_marginBottom="17dp"
+                            android:src="@color/icons_8_muted_blue_dark" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="9dp"
+                            android:src="@drawable/ic_phone"
+                            android:tint="@color/pure_white" />
+
+                        <customviews.typefacesviews.TypeFaceGoogle
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|bottom"
+                            android:text="@string/call"
+                            android:textColor="@color/icons_8_muted_blue_dark"
+                            android:textSize="12dp" />
+                    </FrameLayout>
+
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <customviews.typefacesviews.TypeFaceGoogleBold
+                            android:id="@+id/chat_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|right"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/chat_badge"
+                            android:elevation="5dp"
+                            android:padding="5dp"
+                            android:text="0"
+                            android:textColor="@color/pure_white"
+                            android:textStyle="bold"
+                            android:visibility="visible" />
+
+                        <FrameLayout
+                            android:id="@+id/chat_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/chat_btn_track"
+                                android:layout_width="37dp"
+                                android:layout_height="37dp"
+                                android:layout_gravity="center|top"
+                                android:layout_marginBottom="17dp"
+                                android:src="@color/colorPrimary" />
+
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="8dp"
+                                android:src="@drawable/ic_chat_vector"
+                                android:tint="@color/pure_white" />
+
+                            <customviews.typefacesviews.TypeFaceGoogle
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|bottom"
+                                android:text="@string/chat"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12dp" />
+
+                            <!--<TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end"
+                                android:text="1"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:layout_marginRight="10dp"
+                                android:textColor="@color/pure_black"
+                                android:background="@drawable/badge_chat_layout"
+                                android:visibility="gone"
+                                android:id="@+id/badge_chat_tv"/>
+-->
+                        </FrameLayout>
+                    </FrameLayout>
+
+
+                    <FrameLayout
+                        android:id="@+id/navigate_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/navigate_button_track"
+                            android:layout_width="37dp"
+                            android:layout_height="37dp"
+                            android:layout_gravity="center|top"
+                            android:layout_marginBottom="17dp"
+                            android:src="@color/icons_8_muted_orange" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="8dp"
+                            android:src="@drawable/ic_navigation_vector"
+                            android:tint="@color/pure_white" />
+
+                        <customviews.typefacesviews.TypeFaceGoogle
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|bottom"
+                            android:text="@string/TRACK_RIDE_ACTIVITY__navigate"
+                            android:textColor="@color/icons_8_muted_orange"
+                            android:textSize="12dp" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/info_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="37dp"
+                            android:layout_height="37dp"
+                            android:layout_gravity="center|top"
+                            android:layout_marginBottom="17dp"
+                            android:src="@color/icons_8_muted_orange" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="8dp"
+                            android:src="@drawable/edit"
+                            android:tint="@color/pure_white" />
+
+                        <customviews.typefacesviews.TypeFaceGoogle
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|bottom"
+                            android:text="@string/info_in"
+                            android:textColor="@color/icons_8_muted_orange"
+                            android:textSize="12dp" />
+                    </FrameLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/top_layout_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="130dp"
+
+            android:visibility="visible">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#bbbbbb" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/image_color"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="20dp"
+                    android:src="@drawable/green_filled_circle" />
+
+                <customviews.typefacesviews.TypeFaceGoogle
+                    android:id="@+id/location_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center|left"
+                    android:paddingLeft="5dp"
+                    android:text=""
+                    android:textSize="12dp" />
+
+                <ImageView
+                    android:id="@+id/location_edit_icon"
+                    android:layout_width="15dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/edit" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/layout_sliing_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:layout_marginTop="180dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:id="@+id/slider_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@color/colorPrimary"
+                android:src="@drawable/ic_sort_up_vector"
+                android:tint="@color/pure_white" />
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center|bottom"
+            android:orientation="horizontal">
+
+            <customviews.typefacesviews.TypeFaceGoogleBold
+                android:id="@+id/cancel_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="2"
+                android:background="@color/icons_8_muted_red"
+                android:gravity="center"
+                android:text="@string/TRACK_RIDE_ACTIVITY__cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/pure_white"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <com.apporio.demotaxiappdriver.views.CustomButton
+                android:id="@+id/trip_status_txt_slider"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:visibility="gone"
+                app:bg_color="@color/colorPrimary"
+                app:text_color="@color/pure_white" />
+
+            <customviews.typefacesviews.TypeFaceGoogleBold
+                android:id="@+id/trip_status_txt_simple"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text=""
+                android:textAllCaps="false"
+                android:textColor="@color/pure_white"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardChildDetails"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_gravity="bottom|right"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="fvhvjvbjvrbj"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="30dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/child_walk"
+                        android:layout_marginBottom="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Child \n Details"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <fragment
+                android:id="@+id/map_frag"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/bottom_layout"
+                android:layout_below="@+id/top_layout_two"
+                tools:context=".TrackingActivity" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/sos"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_sos" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

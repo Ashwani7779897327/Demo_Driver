@@ -1,0 +1,81 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml:1:1-28:12
+INJECTED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml:1:1-28:12
+INJECTED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml:1:1-28:12
+INJECTED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml:1:1-28:12
+INJECTED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml:1:1-28:12
+INJECTED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml:1:1-28:12
+INJECTED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml:1:1-28:12
+	package
+		ADDED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml:2:5-47
+		INJECTED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml
+		INJECTED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml
+		ADDED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml:1:1-28:12
+		INJECTED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml
+		ADDED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml:1:1-28:12
+		INJECTED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml:7:5-78
+	android:name
+		ADDED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml:7:22-76
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml:8:5-79
+	android:name
+		ADDED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml:8:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml:9:5-81
+	android:name
+		ADDED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml:9:22-78
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml:10:5-76
+	android:name
+		ADDED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml:10:22-73
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml:11:5-77
+	android:name
+		ADDED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml:11:22-74
+application
+ADDED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml:13:5-24:19
+	android:supportsRtl
+		ADDED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml:15:9-35
+	android:allowBackup
+		ADDED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml:14:9-35
+	android:usesCleartextTraffic
+		ADDED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml:16:9-44
+service#com.apporioinfolabs.synchroniser.AtsLocationService
+ADDED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml:17:9-54
+	android:name
+		ADDED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml:17:18-52
+activity#com.apporioinfolabs.synchroniser.ATSLocationActivity
+ADDED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml:18:9-66
+	android:name
+		ADDED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml:18:19-54
+receiver#com.apporioinfolabs.synchroniser.NotificationActionReceiver
+ADDED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml:19:9-64
+	android:name
+		ADDED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml:19:19-61
+uses-sdk
+INJECTED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml
+INJECTED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml
+INJECTED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml
+INJECTED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml
+		ADDED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml
+		INJECTED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml
+		ADDED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml
+		INJECTED from /Users/apple/taxi-driver-v-19/synchroniser/src/main/AndroidManifest.xml

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="signinfailed_string">Sign In failed</string>
+    <string name="nonetwork_string">No Network</string>
+    <string name="unkown_error_string">Unknown Error</string>
+    <string name="enter_vehicle_make">Enter Vehicle Make</string>
+    <string name="enter_vehicle_model">Enter Vehicle Model</string>
+    <string name="enter_no_of_seats">Enter Number of seats</string>
+    <string name="make_online">Please make online first</string>
+    <string name="demo_driver">DEMO DRIVER</string>
+    <string name="correct_email">please enter correct email</string>
+    <string name="make_sure">Make Sure you logged as Demo in User app as well.</string>
+    <string name="for_demo_testing">For Demo Testing</string>
+    <string name="enter_referral_code_if_any">Enter Referral Code(if any)</string>
+    <string name="info_in">Info</string>
+    <string name="additional_note_text">Additional Note</string>
+    <string name="you_are_online_now">You are online now</string>
+    <string name="making_you_online">Making you online</string>
+    <string name="enter_correct_password">Please length should not be less then 6</string>
+    <string name="total_earnings_text">Total Earnings</string>
+    <string name="rides_earning">Rides</string>
+    <string name="balance_due_earnings">Balance Due</string>
+    <string name="sure_complete_ride">Are you sure you want to complete this ride?</string>
+    <string name="child_details">Child Details:-</string>
+    <string name="your_vehicleds">Your Vehicles</string>
+    <string name="your_other_vehicles">Your Other vehicles</string>
+    <string name="share_vehicle_id">Vehicle-id:-</string>
+    <string name="no_vehicle_activated_message">No Vehicle Activated</string>
+    <string name="please_enter_meter_value">Please enter meter value</string>
+    <string name="child_name">Child Name</string>
+    <string name="child_phone_number">Phone Number:</string>
+    <string name="expiry_date_package">Expiry Date</string>
+</resources>

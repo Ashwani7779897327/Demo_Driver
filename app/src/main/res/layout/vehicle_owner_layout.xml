@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginVertical="10dp"
+    android:id="@+id/owner_veh_id">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:paddingRight="10dp"
+        android:layout_height="wrap_content"
+        android:background="#dfdfdf"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <customviews.typefacesviews.TypeFaceGoogleBold
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center|left"
+            android:paddingLeft="10dp"
+            android:text="@string/owner_vehicle_details"
+            android:textColor="#333333"
+            android:layout_weight="1"
+            android:textStyle="bold">
+
+        </customviews.typefacesviews.TypeFaceGoogleBold>
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/owner_name"
+        android:paddingHorizontal="8dp"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:id="@+id/owner_name_et"
+        android:inputType="textPersonName"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <customviews.typefacesviews.TypeFaceGoogleBold
+                android:id="@+id/country_id_owner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pure_black"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:drawableRight="@drawable/ic_sort_down_vector"
+                android:layout_marginLeft="10dp"/>
+
+
+            <EditText
+                android:id="@+id/owner_no_et"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:gravity="center|left"
+                android:hint="@string/owner_no"
+                android:inputType="phone"
+                android:minLines="1"
+                android:textColorHint="@color/pure_black"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/pure_black" />
+
+
+        <!--<android.support.design.widget.TextInputEditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="owner no"-->
+            <!--android:paddingHorizontal="8dp"-->
+            <!--android:textColorHint="@color/black"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:id="@+id/owner_no_et"-->
+            <!--android:inputType="number"/>-->
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/owner_email"
+            android:paddingHorizontal="8dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:id="@+id/owner_email_et"
+            android:inputType="textEmailAddress"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/owner_bank_name"
+            android:paddingHorizontal="8dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:id="@+id/bank_name_et"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/owner_bank_code"
+            android:paddingHorizontal="8dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:id="@+id/bank_code_et"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/owner_account_no"
+            android:paddingHorizontal="8dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:id="@+id/owner_accno_et"
+            android:inputType="number"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/select_cheque_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <customviews.typefacesviews.TypeFaceGoogle
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:paddingLeft="15dp"
+            android:text="@string/owner_cheque_image"/>
+
+        <ImageView
+            android:id="@+id/cheque_image"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+
+</LinearLayout>

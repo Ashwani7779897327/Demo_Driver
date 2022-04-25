@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:gravity="center">
+    
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_gauge_meter"/>
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="------"
+        android:textSize="17dp"
+        android:id="@+id/text_one"
+        android:textColor="@color/icon_8_muted_black"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="------"
+        android:textSize="17dp"
+        android:id="@+id/text_two"
+        android:textColor="@color/icon_8_muted_black"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="------"
+        android:textSize="17dp"
+        android:id="@+id/text_three"
+        android:textColor="@color/icon_8_muted_black"
+        android:textStyle="bold"/>
+
+</LinearLayout>

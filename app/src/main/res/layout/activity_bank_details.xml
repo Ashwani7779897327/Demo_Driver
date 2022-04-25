@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center|top"
+    android:background="#f7f3f3"
+    android:id="@+id/root"
+    tools:context=".BankDetailsActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:tint="@color/icons_8_muted_greydark"
+            android:padding="15dp"
+            android:id="@+id/back"
+            android:src="@drawable/ic_left_sort_white"/>
+        <customviews.typefacesviews.TypeFaceGoogleBold
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/manage_bank_details"
+            android:gravity="center"
+            android:paddingRight="49dp"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/pure_white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="50dp"
+                android:gravity="center">
+
+                <Spinner
+                    android:id="@+id/accounttype_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:paddingTop="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textColorHint="@color/icons_8_muted_grey"
+                    android:layout_marginTop="10dp">
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/bank_name"
+                        android:hint="@string/bank_name"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout   app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textColorHint="@color/icons_8_muted_grey"
+                    android:layout_marginTop="10dp">
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/bank_account_name"
+                        android:hint="@string/account_name"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textColorHint="@color/icons_8_muted_grey"
+                    android:layout_marginTop="10dp">
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/bank_Account_number"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+                        android:hint="@string/account_number"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textColorHint="@color/icons_8_muted_grey"
+                    android:id="@+id/bank_ifsc_code"
+                    android:layout_marginTop="10dp">
+                    <EditText
+                        android:id="@+id/ifc_edittext"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:hint=""
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:layout_margin="20dp">
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:text="@string/PRICE_FARE__submit"
+                        android:textColor="@color/pure_white"
+                        android:id="@+id/submit"
+                        android:background="@color/colorPrimary"/>
+                </androidx.cardview.widget.CardView>
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@color/icons_8_muted_grey"
+            android:layout_gravity="center|top"
+            android:elevation="5dp"
+            app:civ_border_color="@color/pure_white"
+            app:civ_border_width="3dp"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_bank_account_vector"
+            android:layout_gravity="center|top"
+            android:elevation="6dp"
+            android:tint="@color/pure_white"
+            android:layout_marginTop="20dp"/>
+
+
+
+
+    </FrameLayout>
+
+</LinearLayout>

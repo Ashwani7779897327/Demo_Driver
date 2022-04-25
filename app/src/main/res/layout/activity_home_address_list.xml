@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/root"
+    android:background="@color/pure_white"
+    tools:context=".HomeAddressListActivity">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="49dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="49dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_left_sort_white"
+                android:tint="@color/icons_8_muted_grey"
+                android:id="@+id/back"
+                android:padding="10dp"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/your_home_address"
+                android:layout_weight="1"
+                android:gravity="center|left"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Add New"
+                android:layout_marginRight="5dp"
+                android:id="@+id/add_new"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+    </LinearLayout>
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:id="@+id/swiperefreshLayout">
+        <com.sam.placer.PlaceHolderView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/placeholder"
+            android:background="@color/pure_white"
+            android:layout_marginTop="5dp"></com.sam.placer.PlaceHolderView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/hint_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="13dp"
+        android:gravity="center|left"
+        android:visibility="gone"
+        android:text="@string/please_select_an_address_to_set_your_destination_or_you_can"/>
+
+
+</LinearLayout>

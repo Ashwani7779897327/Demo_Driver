@@ -1,0 +1,196 @@
+    buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+    apply plugin: 'com.android.application'
+    apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+    apply plugin: 'io.fabric'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion '28.0.3'
+    flavorDimensions "default"
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    productFlavors {
+
+        defaultConfig {
+            applicationId "com.apporio.demotaxiappdriver"
+            minSdkVersion 19
+            targetSdkVersion 28
+            versionCode 128
+            versionName "5.3"
+            multiDexEnabled true
+
+            javaCompileOptions {
+                annotationProcessorOptions {
+                    includeCompileClasspath = true
+                }
+            }
+
+            manifestPlaceholders = [
+                    onesignal_app_id               : '39691bc9-f588-41ea-9b7f-1a4f16914ed9',
+                    // Project number pulled from dashboard, local value is ignored.
+                    onesignal_google_project_number: 'REMOTE'
+            ]
+            vectorDrawables.useSupportLibrary = true
+
+            resValue "string", "app_name", "Apporio Driver"
+            resValue "string", "google_map_key", "AIzaSyCm5nnJbETZssUAYwCpkoViadjtEW1jpJg"
+
+            buildConfigField("String", "SOCKET_URL", "\"http://13.235.74.180:8080/\"")
+            buildConfigField("String", "BASE_URL", "\"http://delhi.apporiotaxi.com/Apporiov19/public/\"")
+            buildConfigField("String", "One_SIgnal", "\"39691bc9-f588-41ea-9b7f-1a4f16914ed9\"")
+//            buildConfigField("String", "One_SIgnal", "\"39691bc9-f588-41ea-9b7f-1a4f16914ed9\"")
+
+            buildConfigField("String", "PUBLIC_KEY", "\"29qNTO6pKSGFDyw7AkoQvuxH3REPB4\"")
+            buildConfigField("String", "SECRET_KEY", "\"Wp6YJZAwNRXBDK2sOIqt4ekj1G80rC\"")
+            buildConfigField("String", "MAP_KEY", "\"AIzaSyCm5nnJbETZssUAYwCpkoViadjtEW1jpJg\"")
+            buildConfigField "String", "BUILD_VARIANT", "\"defaultConfig\""
+            buildConfigField("String", "LOG_URL", "\"https:/\"")
+
+        }
+
+
+
+
+        ogcabs {
+
+            applicationId "com.ogcabs.driver"
+            minSdkVersion 19
+            targetSdkVersion 30
+            versionCode 179
+            versionName "8.3"
+            multiDexEnabled true
+
+            javaCompileOptions {
+                annotationProcessorOptions {
+                    includeCompileClasspath = true
+                }
+            }
+
+            manifestPlaceholders = [
+
+                    onesignal_app_id               : '82e4d889-1229-4233-b905-5539a8525582',
+                    // Project number pulled from dashboard, local value is ignored.
+                    onesignal_google_project_number: 'REMOTE'
+            ]
+            vectorDrawables.useSupportLibrary = true
+            resValue "string", "app_name", "Ogcabs Driver"
+            resValue "string", "google_map_key", "AIzaSyBBPrK9yATnUWUXfC-dprZhNTxyLLoKiDo"
+            buildConfigField("String", "MAP_KEY", "\"AIzaSyBBPrK9yATnUWUXfC-dprZhNTxyLLoKiDo\"")
+            buildConfigField("String", "One_SIgnal", "\"82e4d889-1229-4233-b905-5539a8525582\"")
+            buildConfigField("String", "BUILD_VARIANT", "\"ogcabs\"")
+            buildConfigField("String", "BASE_URL", "\"https://admin.ogcabs.com/mainv21/public/\"")
+            buildConfigField("String", "PUBLIC_KEY", "\"ko6u5SmKMACBwGtl2xD7O9ZRQPFyNH\"")
+            buildConfigField("String", "SECRET_KEY", "\"MJyOsK8UYP634EWDejwGt0hpZqRlBn\"")
+            buildConfigField("String", "LOG_URL", "\"https:/\"")
+        }
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+repositories {
+//    maven { url 'http://hypertrack-android-sdk.s3-website-us-west-2.amazonaws.com/' }
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+   // implementation 'com.github.samirapporio:ApporioLocationLib:1.1'
+    //implementation 'com.github.ApporioInfolabs:ATS-Location-Syncronizer:1.12'
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'com.github.amitkma:stitch-lib:1.0.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.wdullaer:materialdatetimepicker:2.5.0'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.amitshekhar.android:android-networking:1.0.2'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.squareup.picasso:picasso:2.5.0'
+    implementation 'com.jakewharton:butterknife:7.0.1'
+//    implementation 'com.hypertrack:hyperlog:0.0.10'
+    implementation 'com.github.lzyzsd:circleprogress:1.1.0@aar'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    //noinspection GradleCompatible
+//    implementation 'com.hypertrack:hyperlog:0.0.10'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.maps.android:android-maps-utils:0.3+'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    // implementation 'com.firebase:geofire-android:2.1.1'
+    // implementation 'com.google.firebase:firebase-config:11.8.0'
+    //implementation 'com.google.firebase:firebase-perf:11.8.0'
+    //implementation 'com.google.firebase:firebase-core:11.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    implementation 'com.ogaclejapan.smarttablayout:library:1.6.1@aar'
+    implementation 'org.jsoup:jsoup:1.9.2'
+    implementation 'androidx.vectordrawable:vectordrawable:1.0.1'
+    annotationProcessor 'com.github.amitkma:compiler:1.0.1'
+    implementation 'morxander.zaman:Zaman:1.0.0'
+   // implementation 'com.mlsdev.rximagepicker:library:2.0.2'
+    implementation 'com.onesignal:OneSignal:3.11.2'
+    implementation 'com.ogaclejapan.smarttablayout:library:1.6.1@aar'
+//    implementation 'com.github.ApporioInfolabs:apporiolibraries:0.1.5'
+    // implementation 'id.zelory:compressor:2.1.0'
+    implementation 'in.shadowfax:proswipebutton:1.1'
+    //implementation 'com.bdhobare:mpesa:0.0.6'
+    implementation 'com.stripe:stripe-android:6.1.2'
+    implementation 'com.google.android.libraries.places:places:2.0.0'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    //implementation 'com.paypal.sdk:paypal-android-sdk:2.14.2'
+    implementation 'com.github.nkzawa:socket.io-client:0.3.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.razorpay:checkout:1.5.2'
+    implementation 'com.github.nguyenhoanglam:ImagePicker:1.3.3'
+    api 'com.theartofdev.edmodo:android-image-cropper:2.8.+'
+    implementation 'id.zelory:compressor:1.0.4'
+    implementation 'io.reactivex:rxandroid:1.2.1'
+//    implementation('com.paytm:pgplussdk:1.2.3') {
+//        transitive = true
+//    }
+    //implementation 'com.github.ssl-zahid:SSLCommerz-Android-Library-:v1.0.2'
+    //implementation 'co.paystack.android:paystack:3.0.10'
+    //implementation 'com.mercadopago.android.px:checkout:4.+'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
+    implementation 'com.firebaseui:firebase-ui-auth:3.0.0'
+    implementation 'com.google.firebase:firebase-auth:18.1.0'
+
+   // implementation 'com.ice.restring:restring:1.0.0'
+    implementation(
+            [group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.4.1'],
+            [group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.4.1'],
+            [group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.4.1']
+    )
+//    implementation project(path: ':atslocation 2')
+    implementation 'com.github.samirapporio:Apporio-Tracking-System:1.0.3'
+
+}
+
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_mpesa"
+    android:paddingTop="50dp">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/mpesa_design"
+        android:gravity="center">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <!--<com.taximark.user.customviews.typefaces.TypeFaceGoogle-->
+            <!--android:id="@+id/country"-->
+            <!--android:layout_width="49dp"-->
+            <!--android:layout_height="49dp"-->
+            <!--android:text="00"-->
+            <!--android:layout_marginLeft="8dp"-->
+            <!--android:drawableRight="@drawable/ic_down_sort"-->
+            <!--android:gravity="center"/>-->
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_phone"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:inputType="phone"
+        android:layout_margin="10dp"
+        android:id="@+id/phone"
+        android:textSize="15dp"
+        android:hint="Your Phone Number"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/wallet_money" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:id="@+id/amount"
+        android:layout_margin="10dp"
+        android:hint="Amount"
+        android:textSize="15dp"
+        android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pay"
+        android:id="@+id/pay"
+        android:textStyle="bold"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:textSize="18dp"
+        android:textColor="@color/pure_white"
+        android:background="#5e9e42"
+        android:layout_margin="10dp" />
+    </LinearLayout>
+
+</LinearLayout>

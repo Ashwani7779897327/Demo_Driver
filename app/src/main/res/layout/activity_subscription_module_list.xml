@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.subscriptionModule.SubscriptionModuleList">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_for_subscription"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/ivBack"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:rotation="90"
+                    android:src="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:tint="@color/pure_white" />
+
+
+                <customviews.typefacesviews.TypeFaceGoogleBold
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/your_subscription"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:rotation="90" />
+
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+
+        <com.sam.placer.PlaceHolderView
+            android:id="@+id/placeholder_activate_package"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+
+        </com.sam.placer.PlaceHolderView>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000">
+
+    </View>
+
+
+    <com.sam.placer.PlaceHolderView
+        android:id="@+id/placeholder_package_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp">
+
+
+    </com.sam.placer.PlaceHolderView>
+
+
+</LinearLayout>
+
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:orientation="vertical">-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="50dp"--><!--android:background="@color/colorHeader"--><!--android:orientation="horizontal">-->
+
+    <!--<LinearLayout--><!--android:id="@+id/ll_back_about"--><!--android:layout_width="50dp"--><!--android:layout_height="match_parent"--><!--android:gravity="center">-->
+
+    <!--<ImageView--><!--android:layout_width="25dp"--><!--android:layout_height="25dp"--><!--android:src="@drawable/back_arrow"--><!--android:tint="@color/colorBlack" />--><!--</LinearLayout>-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:layout_weight="1"--><!--android:gravity="center">-->
+
+    <!--<customviews.typefacesviews.TypeFaceTextMonixRegular--><!--android:id="@+id/text_name"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:text="@string/heading_subscription_2"--><!--android:textColor="@color/colorBlack"--><!--android:textSize="16dp" />--><!--</LinearLayout>-->
+
+    <!--<LinearLayout--><!--android:layout_width="50dp"--><!--android:layout_height="match_parent" />--><!--</LinearLayout>-->
+
+    <!--<View--><!--android:layout_width="match_parent"--><!--android:layout_height="1dp"--><!--android:background="@color/colorView" />-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:orientation="vertical">-->
+
+    <!--<com.sam.placer.PlaceHolderView--><!--android:id="@+id/placeHolderView"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content" />--><!--</LinearLayout>--><!--</LinearLayout>-->
